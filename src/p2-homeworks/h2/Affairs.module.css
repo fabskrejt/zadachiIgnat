@@ -1,3 +1,21 @@
 .someClass {
 
 }
+
+.affairs {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    max-width: 300px;
+    background-color: darkslategray;
+    padding: 5px;
+    color: whitesmoke;
+}
+
+.affairs span{
+    padding-bottom: 10px;
+}
+
+.affairs button{
+    width: 30px;
+    height: 20px;
+}
