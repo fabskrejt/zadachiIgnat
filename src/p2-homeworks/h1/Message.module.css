@@ -1,12 +1,9 @@
 
 .messageBox {
-    display: grid;
-    grid-template-columns: 60px 240px;
+    display: flex;
     background-color: darkslategray;
-
-}
-
-.avatar {
+    align-items: flex-end;
+    padding: 20px;
 
 }
 
@@ -17,24 +14,18 @@
 }
 
 .textBlock {
-    background-color: darkgray;
-    position: relative;
+    background-color: rgba(255, 255, 255, 0.15);
+    /*position: relative;*/
     border-radius: 5px 5px 5px 0px;
-    display: flex;
-    justify-content: space-between;
-
+    width: 180px;
+    min-height: 80px;
 
 }
 
-.textBlock::after {
-    content: "";
-    position: absolute;
-    border: 5px solid transparent;
-    border-right: 5px solid darkgray;
-    border-bottom: 5px solid darkgray;
-    bottom: 0px;
-    left: -10px;
-
+.angle {
+    width: 15px;
+    height: 15px;
+    background: radial-gradient(circle at 0px 0px, rgba(0, 0, 0, 0) 15px, rgba(255, 255, 255, 0.15) 0);
 }
 
 .name {
@@ -45,11 +36,11 @@
 
 .message {
     padding-left: 10px;
+    word-wrap: anywhere;
 }
 
 .sendTime {
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
+    display: flex;
+    justify-content: flex-end;
     padding-right: 10px;
 }

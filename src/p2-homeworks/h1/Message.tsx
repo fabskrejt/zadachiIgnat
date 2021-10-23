@@ -14,6 +14,7 @@ function Message(props: PropsTypeOfMessage) {
             <div className={mStyle.avatar}>
                 <img src={props.avatar}/>
             </div>
+            <div className={mStyle.angle}/>
             <div className={mStyle.textBlock}>
                 <div>
                     <div className={mStyle.name}>{props.name}</div>
