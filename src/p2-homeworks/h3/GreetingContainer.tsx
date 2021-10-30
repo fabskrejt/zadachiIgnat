@@ -18,6 +18,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
 
     const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => { // need to fix any
         if (e.currentTarget.value !== ' ') {
+            setError('')
             setName(e.currentTarget.value) // need to fix
         } else setError('name is require!')
 
@@ -25,8 +26,8 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
     const addUser = () => {
         if (name) {
             addUserCallback(name)
-            setError('')
             alert(`Hello ${name}!`) // need to fix
+            setName('')
         } else setError('name is require!')
     }
 
