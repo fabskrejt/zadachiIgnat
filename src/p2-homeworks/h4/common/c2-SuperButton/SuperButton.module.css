@@ -3,7 +3,7 @@
     display: inline-block;
 }
 .default {
-    background: rgba(32, 57, 52, 0.7);
+    background: darkslategray;
     color: whitesmoke;
     border-radius: 3px;
     border: none;
@@ -14,7 +14,7 @@
     /*background: rgba(32, 57, 52, 0.9);*/
     box-shadow: 0 0 0 2px rgba(54, 229, 229, 0.7);
     transition: 0.1s;
-    background: conic-gradient(rgba(32, 57, 52, 0.9), rgba(32, 57, 52, 0.1));
+    background: conic-gradient(rgba(32, 57, 52, 0.9), rgba(32, 57, 52, 0.5));
     color: black;
 
 }
