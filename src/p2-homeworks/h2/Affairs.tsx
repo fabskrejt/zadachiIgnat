@@ -2,7 +2,7 @@ import React from 'react'
 import Affair from './Affair'
 import {AffairType, FilterType} from './HW2'
 import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
-import aStyle from "./Affairs.module.css";
+
 
 type AffairsPropsType = { // need to fix any
     data: Array<AffairType>
