@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/zadachiIgnat/static/css/main.9f42f6d4.chunk.css",
-    "main.js": "/zadachiIgnat/static/js/main.d4c63276.chunk.js",
-    "main.js.map": "/zadachiIgnat/static/js/main.d4c63276.chunk.js.map",
+    "main.css": "/zadachiIgnat/static/css/main.48887f63.chunk.css",
+    "main.js": "/zadachiIgnat/static/js/main.c18b226b.chunk.js",
+    "main.js.map": "/zadachiIgnat/static/js/main.c18b226b.chunk.js.map",
     "runtime-main.js": "/zadachiIgnat/static/js/runtime-main.eb707a63.js",
     "runtime-main.js.map": "/zadachiIgnat/static/js/runtime-main.eb707a63.js.map",
-    "static/js/2.24d6917e.chunk.js": "/zadachiIgnat/static/js/2.24d6917e.chunk.js",
-    "static/js/2.24d6917e.chunk.js.map": "/zadachiIgnat/static/js/2.24d6917e.chunk.js.map",
+    "static/js/2.1905dbd6.chunk.js": "/zadachiIgnat/static/js/2.1905dbd6.chunk.js",
+    "static/js/2.1905dbd6.chunk.js.map": "/zadachiIgnat/static/js/2.1905dbd6.chunk.js.map",
     "index.html": "/zadachiIgnat/index.html",
-    "static/css/main.9f42f6d4.chunk.css.map": "/zadachiIgnat/static/css/main.9f42f6d4.chunk.css.map",
-    "static/js/2.24d6917e.chunk.js.LICENSE.txt": "/zadachiIgnat/static/js/2.24d6917e.chunk.js.LICENSE.txt"
+    "static/css/main.48887f63.chunk.css.map": "/zadachiIgnat/static/css/main.48887f63.chunk.css.map",
+    "static/js/2.1905dbd6.chunk.js.LICENSE.txt": "/zadachiIgnat/static/js/2.1905dbd6.chunk.js.LICENSE.txt",
+    "static/media/SuperCheckbox.module.css": "/zadachiIgnat/static/media/checkBox.65527bc8.png"
   },
   "entrypoints": [
     "static/js/runtime-main.eb707a63.js",
-    "static/js/2.24d6917e.chunk.js",
-    "static/css/main.9f42f6d4.chunk.css",
-    "static/js/main.d4c63276.chunk.js"
+    "static/js/2.1905dbd6.chunk.js",
+    "static/css/main.48887f63.chunk.css",
+    "static/js/main.c18b226b.chunk.js"
   ]
 }
