@@ -1,0 +1,22 @@
+.header{
+    position: relative;
+    right: 10%;
+    display: inline-block;
+    transition: 1s;
+    background-color: darkgray;
+}
+.header div{
+    display: inline-block;
+    padding-right: 10px;
+}
+.header:hover{
+    right: 0%;
+    transition: 0.5s;
+}
+
+.header:after{
+    content: 'Nav';
+    background-color: darkslategrey;
+    color: whitesmoke;
+}
+
