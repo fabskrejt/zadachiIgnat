@@ -1,16 +1,27 @@
 .header{
     position: relative;
-    right: 10%;
+/*    right: 10%;*/
     display: inline-block;
     transition: 1s;
-    background-color: darkgray;
+    background-color: cadetblue;
+    transform: translateX(-100% );
 }
+.header a{
+   text-decoration: none;
+    color: black;
+}
+.header a:focus{
+   background-color: rgba(3, 252, 219, 0.4);
+    color: black;
+}
+
 .header div{
     display: inline-block;
     padding-right: 10px;
 }
 .header:hover{
-    right: 0%;
+/*    right: 0%;*/
+    transform: translateX(0%);
     transition: 0.5s;
 }
 
@@ -18,5 +29,6 @@
     content: 'Nav';
     background-color: darkslategrey;
     color: whitesmoke;
+    position: absolute;
 }
 
