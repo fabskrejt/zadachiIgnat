@@ -1,8 +1,9 @@
-.span{
-font-size: 20px;
-    margin: 10px;
+.span {
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
 }
 
-.span::before{
+.span::before {
     content: '\1FAB6';
 }
