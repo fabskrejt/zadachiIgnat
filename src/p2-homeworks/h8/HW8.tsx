@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {homeWorkReducer} from './bll/homeWorkReducer'
+import {homeWorkReducer, sortUpAC} from './bll/homeWorkReducer'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 
 // export type UserType =
@@ -23,7 +23,7 @@ function HW8() {
         </div>
     ))
 
-    const sortUp = () => setPeople(homeWorkReducer(initialPeople, {type: 'sort', payload: 'up'}))
+    const sortUp = () => setPeople(homeWorkReducer(initialPeople, sortUpAC()))
 
     return (
         <div>

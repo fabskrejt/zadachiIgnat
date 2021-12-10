@@ -4,7 +4,7 @@ export const homeWorkReducer = (state: any, action: ActionType): any => { // nee
     switch (action.type) {
         case 'SORT-UP': {
             // need to fix
-            return state
+            return [...state].sort( (a, b) => a.name > b.name? 0 : -1 )
         }
         case 'SORT-DOWN': {
             // need to fix
