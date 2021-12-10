@@ -7,8 +7,8 @@ export const homeWorkReducer = (state: any, action: ActionType): any => { // nee
             return [...state].sort( (a, b) => a.name > b.name? 0 : -1 )
         }
         case 'SORT-DOWN': {
-            // need to fix
-            return state
+
+            return [...state].sort( (a, b) => a.name > b.name? -1 : 0 )
         }
         default:
             return state

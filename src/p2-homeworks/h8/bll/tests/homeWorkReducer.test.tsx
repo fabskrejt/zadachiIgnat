@@ -1,5 +1,5 @@
 import React from 'react'
-import {homeWorkReducer, sortUpAC} from '../homeWorkReducer'
+import {homeWorkReducer, sortDownAC, sortUpAC} from '../homeWorkReducer'
 
 let initialState: any[] // need to fix any
 
@@ -23,7 +23,7 @@ test('sort name up', () => {
     // expect(...).toBe(...)
 })
 test('sort name down', () => {
-    const newState = homeWorkReducer(initialState, {type: 'sort', payload: 'down'})
+    const newState = homeWorkReducer(initialState, sortDownAC())
 
     expect(newState[0].name).toBe('Кот')
     expect(newState[5].name).toBe('Александр')
