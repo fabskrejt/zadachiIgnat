@@ -1,5 +1,5 @@
 import React from 'react'
-import {homeWorkReducer, sortDownAC, sortUpAC} from '../homeWorkReducer'
+import {filterAgeAC, homeWorkReducer, sortDownAC, sortUpAC} from '../homeWorkReducer'
 
 let initialState: any[] // need to fix any
 
@@ -30,7 +30,7 @@ test('sort name down', () => {
 
 })
 test('check age 18', () => {
-    const newState = homeWorkReducer(initialState, {type: 'check', payload: 18})
+    const newState = homeWorkReducer(initialState, filterAgeAC())
 
     expect(newState.length).toBe(4)
 })

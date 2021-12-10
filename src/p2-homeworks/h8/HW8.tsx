@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {homeWorkReducer, sortUpAC} from './bll/homeWorkReducer'
+import {filterAgeAC, homeWorkReducer, sortDownAC, sortUpAC} from './bll/homeWorkReducer'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 
 // export type UserType =
@@ -24,6 +24,8 @@ function HW8() {
     ))
 
     const sortUp = () => setPeople(homeWorkReducer(initialPeople, sortUpAC()))
+    const sortDown = () => setPeople(homeWorkReducer(initialPeople, sortDownAC()))
+    const filterAge = () => setPeople(homeWorkReducer(initialPeople, filterAgeAC()))
 
     return (
         <div>
@@ -34,8 +36,8 @@ function HW8() {
             {finalPeople}
 
             <div><SuperButton onClick={sortUp}>sort up</SuperButton></div>
-            <div><SuperButton onClick={sortUp}>ort down</SuperButton></div>
-            <div><SuperButton onClick={sortUp}>check 18</SuperButton></div>
+            <div><SuperButton onClick={sortDown}>ort down</SuperButton></div>
+            <div><SuperButton onClick={filterAge}>check 18</SuperButton></div>
 
 
             <hr/>
