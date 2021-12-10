@@ -25,10 +25,12 @@ test('sort name up', () => {
 test('sort name down', () => {
     const newState = homeWorkReducer(initialState, {type: 'sort', payload: 'down'})
 
+    expect(newState[0].name).toBe('Кот')
+    expect(newState[5].name).toBe('Александр')
 
 })
 test('check age 18', () => {
     const newState = homeWorkReducer(initialState, {type: 'check', payload: 18})
 
-
+    expect(newState.length).toBe(4)
 })

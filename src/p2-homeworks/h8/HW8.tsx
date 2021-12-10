@@ -19,7 +19,7 @@ function HW8() {
     // need to fix any
     const finalPeople = people.map((p: any) => (
         <div key={p._id}>
-            some name, age
+            {p.name} {p.age}
         </div>
     ))
 
@@ -34,8 +34,9 @@ function HW8() {
             {finalPeople}
 
             <div><SuperButton onClick={sortUp}>sort up</SuperButton></div>
-            <div>sort down</div>
-            check 18
+            <div><SuperButton onClick={sortUp}>ort down</SuperButton></div>
+            <div><SuperButton onClick={sortUp}>check 18</SuperButton></div>
+
 
             <hr/>
             {/*для личного творчества, могу проверить*/}
