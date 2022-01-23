@@ -27,8 +27,8 @@ function Clock() {
         setShow(false)
     }
 
-    const stringTime = `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()} ` // fix with date
-    const stringDate = `${date.getDate()}:${date.getMonth()+1}:${date.getFullYear()}` // fix with date
+    const stringTime = date.toLocaleTimeString() // fix with date
+    const stringDate = date.toLocaleDateString() // fix with date
 
 
     return (
