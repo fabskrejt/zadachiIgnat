@@ -7,11 +7,19 @@ function HW11() {
     const [value2, setValue2] = useState(100)
 
     const setValue = ([newValue1, newValue2]: number[]) => {
-        if (newValue1 === newValue2-3) {
-            setValue2(newValue2 + 1)
+        if (newValue1 !== value1 && newValue1 === value2-3) {
+            setValue2(value2 + 1)
+            setValue1(newValue1)
+        } else if(newValue1 !== value1 && newValue1 < value2-3){
+            setValue1(newValue1)
         }
-            if (newValue1 !== value1) setValue1(newValue1)
-        if (newValue2 !== value2) setValue2(newValue2)
+           // if (newValue1 !== value1) setValue1(newValue1)
+        if (newValue2 !== value2 && newValue2-3 === value1 ) {
+            setValue1(value1-1)
+            setValue2(newValue2)
+        } else if(newValue2 !== value2 && newValue2-3 > value1 ){
+            setValue2(newValue2)
+        }
     }
 
     return (
